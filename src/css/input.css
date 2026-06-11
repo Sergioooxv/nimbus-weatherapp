@@ -20,7 +20,7 @@
 body {
     font-family: 'Inter', sans-serif;
     color: var(--text-primary);
-    background: url('../../public/assets/img/beach.jpg');
+    background: url('./public/assets/img/beach.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
