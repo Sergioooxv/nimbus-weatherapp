@@ -554,43 +554,8 @@ video {
   display: none;
 }
 
-.container {
-  width: 100%;
-}
-
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
-}
-
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
+.fixed {
+  position: fixed;
 }
 
 .flex {
@@ -605,16 +570,16 @@ video {
   min-height: 100vh;
 }
 
-.w-1\/4 {
-  width: 25%;
-}
-
-.w-3\/4 {
-  width: 75%;
-}
-
 .w-full {
   width: 100%;
+}
+
+.max-w-6xl {
+  max-width: 72rem;
+}
+
+.flex-col {
+  flex-direction: column;
 }
 
 .items-center {
@@ -631,6 +596,16 @@ video {
 
 .border {
   border-width: 1px;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 :root {
@@ -1148,4 +1123,103 @@ body {
   height: 100%;
   background: var(--accent);
   border-radius: 10px;
+}
+
+@media (max-width: 1023px) {
+  .panel-left {
+    border-right: none;
+    border-bottom: 2px solid var(--border);
+  }
+
+  .header-container {
+    flex-direction: column;
+  }
+
+  .stats-grid {
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .header-container h1 {
+    font-size: 1.8rem;
+  }
+
+  .temp-span {
+    font-size: 2.2rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .days-container {
+    flex-wrap: wrap;
+  }
+
+  .day-card {
+    flex: 1 1 calc(33% - 0.5rem);
+    min-width: 60px;
+  }
+
+  .audio-container {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .audio-bar {
+    width: 100%;
+    flex: none;
+  }
+
+  .fake-browser span {
+    font-size: 0.72rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .icon-big span {
+    font-size: 2.5rem;
+  }
+
+  .icon-big .weather-temp {
+    font-size: 1.8rem;
+  }
+
+  .header-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .temp-span {
+    font-size: 1.8rem;
+  }
+
+  .stat-value {
+    font-size: 1.1rem;
+  }
+
+  .days-container {
+    gap: 0.4rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:flex-row {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:w-1\/4 {
+    width: 25%;
+  }
+
+  .lg\:w-3\/4 {
+    width: 75%;
+  }
+
+  .lg\:flex-row {
+    flex-direction: row;
+  }
 }

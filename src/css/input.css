@@ -533,3 +533,82 @@ body {
     background: var(--accent);
     border-radius: 10px;
 }
+
+@media (max-width: 1023px) {
+    .panel-left {
+        border-right: none;
+        border-bottom: 2px solid var(--border);
+    }
+
+    .header-container {
+        flex-direction: column;
+    }
+
+    .stats-grid {
+        width: 100%;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    .header-container h1 {
+        font-size: 1.8rem;
+    }
+
+    .temp-span {
+        font-size: 2.2rem;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .days-container {
+        flex-wrap: wrap;
+    }
+
+    .day-card {
+        flex: 1 1 calc(33% - 0.5rem);
+        min-width: 60px;
+    }
+
+    .audio-container {
+        flex-wrap: wrap;
+        gap: 0.75rem;
+    }
+
+    .audio-bar {
+        width: 100%;
+        flex: none;
+    }
+
+    .fake-browser span {
+        font-size: 0.72rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .icon-big span {
+        font-size: 2.5rem;
+    }
+
+    .icon-big .weather-temp {
+        font-size: 1.8rem;
+    }
+
+    .header-container h1 {
+        font-size: 1.5rem;
+    }
+
+    .temp-span {
+        font-size: 1.8rem;
+    }
+
+    .stat-value {
+        font-size: 1.1rem;
+    }
+
+    .days-container {
+        gap: 0.4rem;
+    }
+}
