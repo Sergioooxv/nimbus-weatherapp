@@ -20,7 +20,7 @@
 body {
     font-family: 'Inter', sans-serif;
     color: var(--text-primary);
-    background: url('./public/assets/img/beach.jpg');
+    background: url('../public/assets/img/beach.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -110,10 +110,10 @@ body {
 .icon-cont {
     background-color: var(--accent-cold);
     background-image:
-        url('./public/assets/icons/cloud.svg'),
-        url('./public/assets/icons/cloud.svg'),
-        url('./public/assets/icons/cloud.svg'),
-        url('./public/assets/icons/cloud.svg');
+        url('../public/assets/icons/cloud.svg'),
+        url('../public/assets/icons/cloud.svg'),
+        url('../public/assets/icons/cloud.svg'),
+        url('../public/assets/icons/cloud.svg');
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
     background-position: 85% 85%, 5% 80%, 85% 10%, 5% 15%;
     background-size: 70px, 55px, 60px, 50px;
